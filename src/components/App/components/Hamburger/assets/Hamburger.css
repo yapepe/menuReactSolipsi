@@ -1,0 +1,50 @@
+.Hamburger {
+  color: white;
+}
+
+.Hamburger .Hamburger__boton {
+  cursor: pointer;
+  font-size: 5em;
+  position: fixed;
+  top: 0px;
+  left: 10px;
+  background-color: red;
+  padding: 2px;
+}
+
+.Hamburger .Hamburger__menu {
+  height: 100vh;
+  background-color: yellow;
+}
+
+.Hamburger .Hamburger__menu__lista {
+  position: fixed;
+  background-color: tomato;
+  width: 33.33%;
+  left: 0;
+  height: 100%;
+  display: inline-block;
+}
+
+.Hamburger .Hamburger__menu__cerrar {
+  position: fixed;
+  background-color: darkturquoise;
+  width: 66.66%;
+  right: 0;
+  height: 100%;
+  display: inline-block;
+}
+
+.Hamburger .Hamburger__menu__lista__tache {
+  cursor: pointer;
+  right: 0;
+  position: absolute;
+  font-size: 2em;
+  z-index: 1;
+}
+
+.Hamburger .Hamburger__menu__lista__links {
+  position: relative;
+  display: block;
+}
+/*# sourceMappingURL=Hamburger.css.map */
