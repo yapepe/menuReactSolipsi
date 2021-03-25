@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 export default function Hamburger( { links }) {
     const [mostrarMenu , setMostrarMenu] = useState(false)
-
+    let linkKey = 0
    
 
   return (
@@ -21,8 +21,12 @@ export default function Hamburger( { links }) {
                 >x</div>
                 { (Array.isArray(links))
                     ? links.map( link => {
+                        linkKey++
                         return(
-                            <div className='Hamburger__menu__lista__links'>
+                            <div 
+                                key={ linkKey } 
+                                className='Hamburger__menu__lista__links'
+                                >
                                 { link }
                             </div>
                         )
